@@ -3,7 +3,7 @@ import React from 'react';
 // import navigation data
 import { navigation } from '../data';
 
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   
@@ -14,7 +14,7 @@ const Nav = () => {
           return (
             <li key={index}>
               <Link
-                to={item.href}
+                to={item.path}
                 smooth={true}
                 offset={-120}
                 activeClass='active'

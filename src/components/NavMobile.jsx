@@ -8,7 +8,7 @@ import CloseIcon from '../assets/images/close.png';
 import { navigation } from '../data';
 
 // import Link
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const NavMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ const NavMobile = () => {
                     return (
                         <li key={index}>
                             <Link
-                                to={item.href}
+                                to={item.path}
                                 activeClass='active'
                                 spy={true}
                                 offset={-220}

@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../components/UI/productCard/ProductCard';
 import { FeatureImages, products } from '../data';
+import Banner from './Banner';
 
 const Home = () => {
     const [category, setCategory] = useState('ALL')
     const [allProducts, setAllProducts] = useState(products)
-
-    useEffect(() => {
-        const filteredProduct = products.filter(item => item.category === 'Pizza')
-        const sliceProduct = filteredProduct.slice(0, 4)
-    }, []);
 
     useEffect(() => {
         if (category === "ALL") {
@@ -34,8 +30,10 @@ const Home = () => {
         }
     }, [category]);
 
+
     return (
         <>
+           <Banner />
             <section className='section bg-[#f8f3eca1]'>
                 <div className='container mx-auto text-center'>
                     <h2 className='text-5xl font-primary font-extrabold mb-8'>
@@ -73,6 +71,7 @@ const Home = () => {
                         <button className='text-bold' onClick={() => setCategory('PIZZA')}>Pizza</button>
                         <button className='text-bold' onClick={() => setCategory('BREAD')}>Bread</button>
                     </div>
+
                     <div className='lg:grid lg:grid-cols-4 lg:gap-x-[30px] ml-1 mr-1 mt-10'>
                         {allProducts.map((item) => (
                             <div key={item.id}>

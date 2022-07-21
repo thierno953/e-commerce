@@ -3,8 +3,6 @@ import React from 'react';
 // import image
 import Image from '../assets/images/hero.png';
 
-// import components
-import Header from './Header';
 
 const Banner = () => {
     return (
@@ -12,7 +10,6 @@ const Banner = () => {
             id='home'
             className='lg:h-full lg:max-h-800 bg-gradient-to-t from-[#f8f3ec] to-[#e0c8ac]'
         >
-            <Header />
             <div className='container mx-auto h-full lg:flex pt-32'>
                 <div className='text-center mx-auto h-full lg:text-left px-8 md:p-0'>
                     <h1 className='font-primary font-black text-6xl lg:text-7xl text-primary mb-4 lg:mt-[70px] leading-tight lg:leading-[90px]'>

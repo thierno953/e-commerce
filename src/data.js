@@ -28,33 +28,26 @@ import product_06_image_01 from "./assets/images/bread(1).png";
 import product_06_image_02 from "./assets/images/bread(2).png";
 import product_06_image_03 from "./assets/images/bread(3).png";
 
+// about images
+import ProfilePhoto1 from "./assets/images/bread(1).png";
+import ProfilePhoto2 from "./assets/images/bread(2).png";
+import ProfilePhoto3 from "./assets/images/bread(3).png";
+
 
 // navigation data
 export const navigation = [
     {
         name: 'Home',
-        href: 'home',
+        path: '/home',
     },
     {
-        name: 'About',
-        href: 'about',
+        name: 'AllProducts',
+        path: '/products',
     },
     {
-        name: 'Skills',
-        href: 'skills',
-    },
-    {
-        name: 'Services',
-        href: 'services',
-    },
-    {
-        name: 'Projects',
-        href: 'projects',
-    },
-    {
-        name: 'Contact',
-        href: 'contact',
-    },
+        name: 'Cart',
+        path: '/cart',
+    }
 ];
 
 // skills data
@@ -237,3 +230,25 @@ export const products = [
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
     },
 ];
+
+// aboutSlider data
+export const aboutSlider = [
+    {
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!',
+      name: 'Jane Cooper',
+      image: ProfilePhoto1,
+      position: 'Web Developer',
+    },
+    {
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!',
+      name: 'Theresa Webb',
+      image: ProfilePhoto2,
+      position: 'Web Designer',
+    },
+    {
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!',
+      name: 'Kathryn Murphy',
+      image: ProfilePhoto3,
+      position: 'UI/UX Designer',
+    },
+  ];
