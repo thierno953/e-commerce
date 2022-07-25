@@ -4,7 +4,7 @@ import featureImg02 from "./assets/images/service-02.png"
 import featureImg03 from "./assets/images/service-03.png"
 
 // all images imported from images directory
-import product_01_image_01 from "./assets/images/robe-de-reve-en-pagne-africain.webp";
+import product_01_image_01 from "./assets/images/product_01.jpg";
 import product_01_image_02 from "./assets/images/product_01.1.jpg";
 import product_01_image_03 from "./assets/images/product_01.3.jpg";
 
@@ -54,21 +54,21 @@ export const navigation = [
 export const FeatureImages = [
     {
         icon: featureImg01,
-        title: 'Web Development',
+        title: 'Easy to Order',
         description:
-            'I like to code things from scratch, and enjoy bringing ideas to life in the browser.',
+            'You only need a few steps in food ordering.',
     },
     {
         icon: featureImg02,
-        title: 'Web Designer',
+        title: 'Easy to Order',
         description:
-            'I value simple content structure, clean design patterns, and thoughtful interactions.',
+            'Delivery that is always on time even faster.',
     },
     {
         icon: featureImg03,
-        title: 'Web Designer',
+        title: 'Easy to Order',
         description:
-            'I value simple content structure, clean design patterns, and thoughtful interactions.',
+            'Not only fast for us, quality is also number one.',
     },
 ];
 

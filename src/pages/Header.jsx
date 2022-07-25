@@ -33,9 +33,9 @@ const Header = () => {
         >
             <div className='container mx-auto flex items-center justify-between'>
                 {/* logo */}
-                <a href='#'>
-                    <img src={Logo} alt='logo image' className='h-[35px]' />
-                </a>
+                <Link to='/'>
+                    <img src={Logo} alt='logo' className='h-[35px]' />
+                </Link>
                 <Link to="/cart" className='flex font-primary text-xl'><GrCart />({totalQuantity})</Link>
                 {/* nav */}
                 <Nav />

@@ -31,9 +31,10 @@ const AllProducts = () => {
         <section className='section'>
             <div className='container mx-auto text-center mt-20'>
                 <h2 className='text-5xl font-primary font-extrabold mb-8'>
-                    All Products
+                    Find your favorite food <br />
+                    delivery partner
                 </h2>
-                <input type="text" placeholder="I'm looking for..." className='form-control'
+                <input type="text" placeholder="I'm looking for..." className='form-control text-base text-black'
                     value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
 
                 <div className='lg:grid lg:grid-cols-4 lg:gap-x-[30px] ml-1 mr-1 mt-10'>
@@ -48,8 +49,8 @@ const AllProducts = () => {
                         <ReactPaginate pageCount={pageCount} onPageChange={changePage}
                             previousLabel={"Prev"} nextLabel={"Next"} className='pagination-link' />
                     ) : (
-                        <h2 className='font-primary font-bold text-2xl min-h-screen'>
-                            Product not found
+                        <h2 className='font-primary font-bold text-4xl text-center min-h-screen'>
+                            Food not found
                         </h2>
                     )
 

@@ -15,7 +15,7 @@ const ProductCard = (props) => {
 
     return (
         <div className='text-center lg:text-left mb-12'>
-            <img className='mx-w-full lg:mx-0 mb-3 object-cover' src={image01} alt='' />
+            <Link to={`/product/${id}`}><img className='mx-w-full w-[100%] sm:w-[80%] mx-auto flex items-center justify-center m-auto lg:mx-0 mb-3 object-cover' src={image01} alt='' /></Link>
             <h4 className='text-2xl mb-2 font-primary font-bold'><Link to={`/product/${id}`}>{title}</Link></h4>
             <div className='flex items-center justify-between max-w-[332px] lg:max-w-[350px] mx-auto lg:mx-0 mt-1'>
                 <p>{price}€</p>

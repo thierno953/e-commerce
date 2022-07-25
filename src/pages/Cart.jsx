@@ -44,12 +44,12 @@ const Cart = () => {
                 </div>
                 <div className='flex items-center justify-center flex-col mt-10'>
                     <h6 className='text-2xl font-bold'>SubTotal: <span>${totalAmount}</span></h6>
-                    <p className='pt-5'>Taxes and shipping will calculate at checkout</p>
-                    <div className='flex flex-wrap gap-5 mt-5'>
-                        <button className='bg-accent px-2 py-1 text-white text-center rounded'>
+                    <p className='pt-5 text-center'>Taxes and shipping will calculate at checkout</p>
+                    <div className='flex flex-wrap items-center justify-center gap-5 pt-8'>
+                        <button className='bg-accent px-3 py-2 text-white text-center rounded'>
                             <Link to="/products">Continue Shipping</Link>
                         </button>
-                        <button className='bg-accent px-2 py-1 text-white text-center rounded'>
+                        <button className='bg-accent px-3 py-2 text-white text-center rounded'>
                             <Link to="/checkout">Proceed to checkout</Link>
                         </button>
                     </div>

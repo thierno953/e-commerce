@@ -37,7 +37,7 @@ const Home = () => {
             <section className='section bg-[#f8f3eca1]'>
                 <div className='container mx-auto text-center'>
                     <h2 className='text-5xl font-primary font-extrabold mb-8'>
-                        What i do
+                    Your Favourite Food  <br />Delivery Partner
                     </h2>
 
                     <div className='flex flex-wrap justify-center gap-12 ml-1 mr-1'>
@@ -63,16 +63,16 @@ const Home = () => {
             <section className='section'>
                 <div className='container mx-auto text-center'>
                     <h2 className='text-5xl font-primary font-extrabold mb-8'>
-                        Popular Products
+                        Menu That Alwaays <br />Make You Fall In Love
                     </h2>
-                    <div className='flex items-center justify-center gap-10 md:gap-12 mx-1'>
-                        <button className='text-bold' onClick={() => setCategory('ALL')}>All</button>
-                        <button className='text-bold' onClick={() => setCategory('BURGER')}>Burger</button>
-                        <button className='text-bold' onClick={() => setCategory('PIZZA')}>Pizza</button>
-                        <button className='text-bold' onClick={() => setCategory('BREAD')}>Bread</button>
+                    <div className='flex items-center justify-center gap-10 md:gap-12 mx-3 overflow-x-scroll sm:overflow-x-hidden'>
+                        <button className='text-bold text-2xl' onClick={() => setCategory('ALL')}>All</button>
+                        <button className='text-bold text-2xl' onClick={() => setCategory('BURGER')}>Burger</button>
+                        <button className='text-bold text-2xl' onClick={() => setCategory('PIZZA')}>Pizza</button>
+                        <button className='text-bold text-2xl' onClick={() => setCategory('BREAD')}>Bread</button>
                     </div>
 
-                    <div className='lg:grid lg:grid-cols-4 lg:gap-x-[30px] ml-1 mr-1 mt-10'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-[30px] ml-1 mr-1 mt-10'>
                         {allProducts.map((item) => (
                             <div key={item.id}>
                                 <ProductCard item={item} />

@@ -63,7 +63,7 @@ const ProductDetails = () => {
           </div>
         </div>
         <h2 className='text-5xl font-primary font-extrabold pt-[40px]'>
-          Related Products
+          Related Foods
         </h2>
         <div className='lg:grid lg:grid-cols-4 lg:gap-x-[30px] ml-1 mr-1 mt-20'>
           {
